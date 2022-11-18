@@ -9,23 +9,43 @@
 /* Begin PBXBuildFile section */
 		BA0CBCF628EC55090003CC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBCF528EC55090003CC71 /* AppDelegate.swift */; };
 		BA0CBCF828EC55090003CC71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBCF728EC55090003CC71 /* SceneDelegate.swift */; };
-		BA0CBCFA28EC55090003CC71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBCF928EC55090003CC71 /* ViewController.swift */; };
-		BA0CBCFD28EC55090003CC71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0CBCFB28EC55090003CC71 /* Main.storyboard */; };
 		BA0CBD0028EC55090003CC71 /* todolist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBCFE28EC55090003CC71 /* todolist.xcdatamodeld */; };
-		BA0CBD0228EC550B0003CC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0CBD0128EC550B0003CC71 /* Assets.xcassets */; };
-		BA0CBD0528EC550B0003CC71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0CBD0328EC550B0003CC71 /* LaunchScreen.storyboard */; };
+		BA0CBD0F28EC55500003CC71 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD0E28EC55500003CC71 /* MainScreenViewController.swift */; };
+		BA0CBD1128EC72860003CC71 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD1028EC72860003CC71 /* MainScreenPresenter.swift */; };
+		BA0CBD1328EC72920003CC71 /* MainScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD1228EC72920003CC71 /* MainScreenAssembly.swift */; };
+		BA0CBD1D28EC72F50003CC71 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD1C28EC72F50003CC71 /* MainFlowCoordinator.swift */; };
+		BA0CBD2428EE02AE0003CC71 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA0CBD2328EE02AE0003CC71 /* SnapKit */; };
+		BA0CBD2928EEB9C00003CC71 /* EditScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD2828EEB9C00003CC71 /* EditScreenViewController.swift */; };
+		BA0CBD2B28EEB9CD0003CC71 /* EditScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD2A28EEB9CD0003CC71 /* EditScreenPresenter.swift */; };
+		BA0CBD2D28EEB9DA0003CC71 /* EditScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD2C28EEB9DA0003CC71 /* EditScreenAssembly.swift */; };
+		BA0CBD2F28EEF3300003CC71 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD2E28EEF3300003CC71 /* DateService.swift */; };
+		BA96592E29279FEB0005CB1C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96592D29279FEB0005CB1C /* UserViewController.swift */; };
+		BA96593029279FFE0005CB1C /* UserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96592F29279FFE0005CB1C /* UserAssembly.swift */; };
+		BA9659322927A0080005CB1C /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9659312927A0080005CB1C /* UserPresenter.swift */; };
+		BAB7B87C28F5A8DB00A1FD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0CBD0128EC550B0003CC71 /* Assets.xcassets */; };
+		BAE516EC28F410B600130628 /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE516EB28F410B600130628 /* NotesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA0CBCF228EC55090003CC71 /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0CBCF528EC55090003CC71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA0CBCF728EC55090003CC71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA0CBCF928EC55090003CC71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA0CBCFC28EC55090003CC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA0CBCFF28EC55090003CC71 /* todolist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = todolist.xcdatamodel; sourceTree = "<group>"; };
 		BA0CBD0128EC550B0003CC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0CBD0428EC550B0003CC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0CBD0628EC550B0003CC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0CBD0E28EC55500003CC71 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		BA0CBD1028EC72860003CC71 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		BA0CBD1228EC72920003CC71 /* MainScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenAssembly.swift; sourceTree = "<group>"; };
+		BA0CBD1C28EC72F50003CC71 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		BA0CBD2828EEB9C00003CC71 /* EditScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreenViewController.swift; sourceTree = "<group>"; };
+		BA0CBD2A28EEB9CD0003CC71 /* EditScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreenPresenter.swift; sourceTree = "<group>"; };
+		BA0CBD2C28EEB9DA0003CC71 /* EditScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreenAssembly.swift; sourceTree = "<group>"; };
+		BA0CBD2E28EEF3300003CC71 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		BA96592D29279FEB0005CB1C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		BA96592F29279FFE0005CB1C /* UserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAssembly.swift; sourceTree = "<group>"; };
+		BA9659312927A0080005CB1C /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		BAE516EB28F410B600130628 /* NotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0CBD2428EE02AE0003CC71 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,12 @@
 		BA0CBCE928EC55090003CC71 = {
 			isa = PBXGroup;
 			children = (
+				BA96592C29279FDA0005CB1C /* User */,
+				BAE516EA28F410A200130628 /* Service */,
+				BA0CBD2728EEB98D0003CC71 /* CurrentList */,
+				BA0CBD1B28EC72E60003CC71 /* General */,
+				BA0CBD0D28EC55390003CC71 /* MainScreen */,
+				BA0CBD0C28EC55140003CC71 /* Application */,
 				BA0CBCF428EC55090003CC71 /* todolist */,
 				BA0CBCF328EC55090003CC71 /* Products */,
 			);
@@ -58,16 +85,68 @@
 		BA0CBCF428EC55090003CC71 /* todolist */ = {
 			isa = PBXGroup;
 			children = (
-				BA0CBCF528EC55090003CC71 /* AppDelegate.swift */,
-				BA0CBCF728EC55090003CC71 /* SceneDelegate.swift */,
-				BA0CBCF928EC55090003CC71 /* ViewController.swift */,
-				BA0CBCFB28EC55090003CC71 /* Main.storyboard */,
 				BA0CBD0128EC550B0003CC71 /* Assets.xcassets */,
 				BA0CBD0328EC550B0003CC71 /* LaunchScreen.storyboard */,
 				BA0CBD0628EC550B0003CC71 /* Info.plist */,
 				BA0CBCFE28EC55090003CC71 /* todolist.xcdatamodeld */,
 			);
 			path = todolist;
+			sourceTree = "<group>";
+		};
+		BA0CBD0C28EC55140003CC71 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CBCF728EC55090003CC71 /* SceneDelegate.swift */,
+				BA0CBCF528EC55090003CC71 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BA0CBD0D28EC55390003CC71 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CBD0E28EC55500003CC71 /* MainScreenViewController.swift */,
+				BA0CBD1028EC72860003CC71 /* MainScreenPresenter.swift */,
+				BA0CBD1228EC72920003CC71 /* MainScreenAssembly.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		BA0CBD1B28EC72E60003CC71 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CBD1C28EC72F50003CC71 /* MainFlowCoordinator.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		BA0CBD2728EEB98D0003CC71 /* CurrentList */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CBD2828EEB9C00003CC71 /* EditScreenViewController.swift */,
+				BA0CBD2A28EEB9CD0003CC71 /* EditScreenPresenter.swift */,
+				BA0CBD2C28EEB9DA0003CC71 /* EditScreenAssembly.swift */,
+			);
+			path = CurrentList;
+			sourceTree = "<group>";
+		};
+		BA96592C29279FDA0005CB1C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BA96592D29279FEB0005CB1C /* UserViewController.swift */,
+				BA96592F29279FFE0005CB1C /* UserAssembly.swift */,
+				BA9659312927A0080005CB1C /* UserPresenter.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		BAE516EA28F410A200130628 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CBD2E28EEF3300003CC71 /* DateService.swift */,
+				BAE516EB28F410B600130628 /* NotesService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +165,9 @@
 			dependencies = (
 			);
 			name = todolist;
+			packageProductDependencies = (
+				BA0CBD2328EE02AE0003CC71 /* SnapKit */,
+			);
 			productName = todolist;
 			productReference = BA0CBCF228EC55090003CC71 /* todolist.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +196,9 @@
 				Base,
 			);
 			mainGroup = BA0CBCE928EC55090003CC71;
+			packageReferences = (
+				BA0CBD2228EE02AE0003CC71 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = BA0CBCF328EC55090003CC71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0CBD0528EC550B0003CC71 /* LaunchScreen.storyboard in Resources */,
-				BA0CBD0228EC550B0003CC71 /* Assets.xcassets in Resources */,
-				BA0CBCFD28EC55090003CC71 /* Main.storyboard in Resources */,
+				BAB7B87C28F5A8DB00A1FD2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +224,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0CBCFA28EC55090003CC71 /* ViewController.swift in Sources */,
+				BA0CBD2B28EEB9CD0003CC71 /* EditScreenPresenter.swift in Sources */,
+				BA96592E29279FEB0005CB1C /* UserViewController.swift in Sources */,
+				BA0CBD2D28EEB9DA0003CC71 /* EditScreenAssembly.swift in Sources */,
+				BA0CBD0F28EC55500003CC71 /* MainScreenViewController.swift in Sources */,
+				BA0CBD1D28EC72F50003CC71 /* MainFlowCoordinator.swift in Sources */,
+				BA0CBD2928EEB9C00003CC71 /* EditScreenViewController.swift in Sources */,
 				BA0CBCF628EC55090003CC71 /* AppDelegate.swift in Sources */,
+				BA9659322927A0080005CB1C /* UserPresenter.swift in Sources */,
+				BA0CBD2F28EEF3300003CC71 /* DateService.swift in Sources */,
 				BA0CBCF828EC55090003CC71 /* SceneDelegate.swift in Sources */,
+				BA0CBD1328EC72920003CC71 /* MainScreenAssembly.swift in Sources */,
+				BA96593029279FFE0005CB1C /* UserAssembly.swift in Sources */,
+				BAE516EC28F410B600130628 /* NotesService.swift in Sources */,
 				BA0CBD0028EC55090003CC71 /* todolist.xcdatamodeld in Sources */,
+				BA0CBD1128EC72860003CC71 /* MainScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA0CBCFB28EC55090003CC71 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA0CBCFC28EC55090003CC71 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA0CBD0328EC550B0003CC71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +382,6 @@
 				INFOPLIST_FILE = todolist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +409,6 @@
 				INFOPLIST_FILE = todolist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,6 +446,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA0CBD2228EE02AE0003CC71 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA0CBD2328EE02AE0003CC71 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0CBD2228EE02AE0003CC71 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BA0CBCFE28EC55090003CC71 /* todolist.xcdatamodeld */ = {
