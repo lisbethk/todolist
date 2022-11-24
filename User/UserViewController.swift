@@ -9,7 +9,7 @@ final class UserViewController: UIViewController {
     private lazy var temp = UILabel()
     private lazy var city = UILabel()
     
-//    private let image: UIImage - !!!
+//    private let image: UIImage
 
     init(presenter: UserPresenter) {
         self.presenter = presenter
