@@ -4,10 +4,11 @@ import UIKit
 
 final class MainFlowCoordinator: UINavigationController, EditScreenPresenterOutput, UserPresenterOutput {
     private let noteService = FileNoteService()
+    private let networkService = NetworkService()
     
     private lazy var mainScreenAssembly = MainScreenAssembly(noteService: noteService)
     private lazy var noteScreenAssembly = NoteScreenAssembly(noteService: noteService)
-    private lazy var userAssembly = UserAssembly()
+    private lazy var userAssembly = UserAssembly(networkService: networkService)
     
     private var rootViewController = UITabBarController()
     
