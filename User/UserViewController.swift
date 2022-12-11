@@ -1,7 +1,5 @@
-
 import Foundation
 import UIKit
-
 
 final class UserViewController: UIViewController {
     private let presenter: UserPresenter
@@ -24,15 +22,16 @@ final class UserViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(city)
-        city.snp.makeConstraints { make in
-            make.top.equalTo(imageView.snp.bottom).offset(7)
-            make.centerX.equalToSuperview()
-        }
+//        city.text = "Самара"
+//        city.snp.makeConstraints { make in
+//            make.top.equalToSuperview().offset(view.frame.height / 1.79)
+//            make.centerX.equalToSuperview()
+//        }
         view.addSubview(temp)
-        temp.text = "Температура: \nВлажность:"
+        temp.text = "Локация: \nТемпература: \nВлажность: \nСкорость ветра:"
         temp.numberOfLines = 0
         temp.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(view.frame.height/1.4)
+            make.top.equalToSuperview().offset(view.frame.height/1.7)
             make.centerX.equalToSuperview()
         }
         
@@ -47,26 +46,6 @@ final class UserViewController: UIViewController {
         }
         presenter.viewDidLoad()
         view.backgroundColor = .systemBackground
-//        fetchWeather()
     }
     
-    func fetchWeather() {
-        let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=53.234523&lon=50.201535"
-        
-        guard let url = URL(string: urlString) else { return }
-        
-        var request = URLRequest(url: url)
-        request.addValue("667cd4c5-2d66-445b-ac92-f956f9c7d6f7", forHTTPHeaderField: "X-Yandex-API-Key")
-        request.httpMethod = "GET"
-        
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-//            если получилось получить data
-            guard let data = data else {
-                print("error")
-                return
-            }
-            print(String(data: data, encoding: .utf8)!)
-        }
-        task.resume()
-    }
 }
