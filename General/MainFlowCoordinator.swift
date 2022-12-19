@@ -2,19 +2,20 @@
 import Foundation
 import UIKit
 
-final class MainFlowCoordinator: UINavigationController, EditScreenPresenterOutput, UserPresenterOutput {
+final class MainFlowCoordinator: UINavigationController, EditScreenPresenterOutput {
     private let noteService = FileNoteService()
-    private let networkService = NetworkService()
+    private let weatherService = WeatherService()
+    private let locationManager = LocationManager()
     
     private lazy var mainScreenAssembly = MainScreenAssembly(noteService: noteService)
     private lazy var noteScreenAssembly = NoteScreenAssembly(noteService: noteService)
-    private lazy var userAssembly = UserAssembly(networkService: networkService)
+    private lazy var userAssembly = UserAssembly(weatherService: weatherService, locationManager: locationManager)
     
     private var rootViewController = UITabBarController()
     
     func start(from window: UIWindow) {
 
-        let userViewController = userAssembly.assemble(output: self)
+        let userViewController = userAssembly.assemble()
         userViewController.tabBarItem = .init(title: "USER",
                                               image: nil,
                                               selectedImage: nil)
