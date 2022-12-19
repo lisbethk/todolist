@@ -1,9 +1,14 @@
 import Foundation
+import CoreLocation
 
-struct NetworkService {
+protocol WeatherServiceProtocol {
+    func fetchWeather(lattitude: CLLocationDegrees, longitude: CLLocationDegrees, completion: @escaping (Weather) -> Void)
+}
+
+struct WeatherService: WeatherServiceProtocol {
     
-    func fetchWeather(completion: @escaping (Weather) -> Void) {
-        let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=53.234523&lon=50.201535"
+    func fetchWeather(lattitude: CLLocationDegrees, longitude: CLLocationDegrees, completion: @escaping (Weather) -> Void) {
+        let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=\(lattitude)&lon=\(longitude)"
         
         guard let url = URL(string: urlString) else { return }
         
@@ -19,7 +24,6 @@ struct NetworkService {
             }
 //            print(String(data: data, encoding: .utf8)!)
             if let weather = self.parseJson(withData: data) {
-                print(weather)
                 completion(weather)
             }
         }
@@ -30,9 +34,7 @@ struct NetworkService {
         let decoder = JSONDecoder()
         do {
             let weatherData = try decoder.decode(weatherData.self, from: data)
-            guard let weather = Weather(weatherData: weatherData) else {
-                return nil
-            }
+            let weather = Weather(weatherData: weatherData)
             return weather
         } catch let error as NSError {
             print(error.localizedDescription)

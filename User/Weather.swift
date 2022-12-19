@@ -1,5 +1,53 @@
 import Foundation
 
+struct ConditionImage {
+    var condition: String
+    var imageName: String {
+        switch condition {
+        case "clear" :
+            return "sun.max.fill"
+        case "partly-cloudy" :
+            return "cloud.fill"
+        case "cloudy" :
+            return "cloud.fill"
+        case "overcast" :
+            return "cloud.fill"
+        case "drizzle" :
+            return "cloud.drizzle.fill"
+        case "light-rain" :
+            return "cloud.drizzle.fill"
+        case "rain" :
+            return "cloud.drizzle.fill"
+        case "moderate-rain" :
+            return "cloud.drizzle.fill"
+        case "heavy-rain" :
+            return "cloud.drizzle.fill"
+        case "continuous-heavy-rain" :
+            return "cloud.drizzle.fill"
+        case "showers" :
+            return "cloud.drizzle.fill"
+        case "wet-snow" :
+            return "cloud.snow"
+        case "light-snow" :
+            return "cloud.snow"
+        case "snow" :
+            return "cloud.snow"
+        case "snow-showers" :
+            return "cloud.snow"
+        case "hail" :
+            return "cloud.snow"
+        case "thunderstorm" :
+            return "cloud.snow"
+        case "thunderstorm-with-rain" :
+            return "cloud.snow"
+        case "thunderstorm-with-hail" :
+            return "cloud.snow"
+        default :
+            return "sun.max.fill"
+        }
+    }
+}
+
 struct Weather {
     var name: String = "Название"
     var temperature: Int
@@ -52,7 +100,7 @@ struct Weather {
         }
     }
     
-    init?(weatherData: weatherData) {
+    init(weatherData: weatherData) {
         temperature = weatherData.fact.temp
         conditionCode = weatherData.fact.icon
         url = weatherData.info.url

@@ -19,15 +19,31 @@
 		BA0CBD2B28EEB9CD0003CC71 /* EditScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD2A28EEB9CD0003CC71 /* EditScreenPresenter.swift */; };
 		BA0CBD2D28EEB9DA0003CC71 /* EditScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD2C28EEB9DA0003CC71 /* EditScreenAssembly.swift */; };
 		BA0CBD2F28EEF3300003CC71 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CBD2E28EEF3300003CC71 /* DateService.swift */; };
+		BA2B0E03294FA811000E41FC /* todolistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B0E02294FA811000E41FC /* todolistTests.swift */; };
+		BA2B0E0B294FB1EA000E41FC /* WeatherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B0E0A294FB1EA000E41FC /* WeatherServiceMock.swift */; };
+		BA2B0E0D294FB302000E41FC /* LocationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B0E0C294FB302000E41FC /* LocationManagerMock.swift */; };
+		BA2B0E0F294FB374000E41FC /* UserViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B0E0E294FB374000E41FC /* UserViewControllerMock.swift */; };
+		BA2B0E11294FB8A9000E41FC /* DispatchQueueMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B0E10294FB8A9000E41FC /* DispatchQueueMock.swift */; };
 		BA38A4CE2938EECB00FED81F /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38A4CD2938EECB00FED81F /* WeatherData.swift */; };
 		BA38A4D02938F46B00FED81F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38A4CF2938F46B00FED81F /* Weather.swift */; };
-		BA38A4D22938F89300FED81F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38A4D12938F89300FED81F /* NetworkService.swift */; };
+		BA38A4D22938F89300FED81F /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38A4D12938F89300FED81F /* WeatherService.swift */; };
+		BA76D74D294F909100140C35 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76D74C294F909100140C35 /* LocationManager.swift */; };
 		BA96592E29279FEB0005CB1C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96592D29279FEB0005CB1C /* UserViewController.swift */; };
 		BA96593029279FFE0005CB1C /* UserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96592F29279FFE0005CB1C /* UserAssembly.swift */; };
 		BA9659322927A0080005CB1C /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9659312927A0080005CB1C /* UserPresenter.swift */; };
 		BAB7B87C28F5A8DB00A1FD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0CBD0128EC550B0003CC71 /* Assets.xcassets */; };
 		BAE516EC28F410B600130628 /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE516EB28F410B600130628 /* NotesService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA2B0E04294FA811000E41FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0CBCEA28EC55090003CC71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA0CBCF128EC55090003CC71;
+			remoteInfo = todolist;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BA0CBCF228EC55090003CC71 /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,9 +61,16 @@
 		BA0CBD2A28EEB9CD0003CC71 /* EditScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreenPresenter.swift; sourceTree = "<group>"; };
 		BA0CBD2C28EEB9DA0003CC71 /* EditScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreenAssembly.swift; sourceTree = "<group>"; };
 		BA0CBD2E28EEF3300003CC71 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		BA2B0E00294FA811000E41FC /* todolistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todolistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2B0E02294FA811000E41FC /* todolistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistTests.swift; sourceTree = "<group>"; };
+		BA2B0E0A294FB1EA000E41FC /* WeatherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceMock.swift; sourceTree = "<group>"; };
+		BA2B0E0C294FB302000E41FC /* LocationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerMock.swift; sourceTree = "<group>"; };
+		BA2B0E0E294FB374000E41FC /* UserViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewControllerMock.swift; sourceTree = "<group>"; };
+		BA2B0E10294FB8A9000E41FC /* DispatchQueueMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueMock.swift; sourceTree = "<group>"; };
 		BA38A4CD2938EECB00FED81F /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		BA38A4CF2938F46B00FED81F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		BA38A4D12938F89300FED81F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BA38A4D12938F89300FED81F /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		BA76D74C294F909100140C35 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BA96592D29279FEB0005CB1C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		BA96592F29279FFE0005CB1C /* UserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAssembly.swift; sourceTree = "<group>"; };
 		BA9659312927A0080005CB1C /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
@@ -60,6 +83,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0CBD2428EE02AE0003CC71 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2B0DFD294FA811000E41FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +106,7 @@
 				BA0CBD0D28EC55390003CC71 /* MainScreen */,
 				BA0CBD0C28EC55140003CC71 /* Application */,
 				BA0CBCF428EC55090003CC71 /* todolist */,
+				BA2B0E01294FA811000E41FC /* todolistTests */,
 				BA0CBCF328EC55090003CC71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				BA0CBCF228EC55090003CC71 /* todolist.app */,
+				BA2B0E00294FA811000E41FC /* todolistTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +168,26 @@
 			path = CurrentList;
 			sourceTree = "<group>";
 		};
+		BA2B0E01294FA811000E41FC /* todolistTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA2B0E09294FB1DA000E41FC /* Mocks */,
+				BA2B0E02294FA811000E41FC /* todolistTests.swift */,
+			);
+			path = todolistTests;
+			sourceTree = "<group>";
+		};
+		BA2B0E09294FB1DA000E41FC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2B0E0A294FB1EA000E41FC /* WeatherServiceMock.swift */,
+				BA2B0E0C294FB302000E41FC /* LocationManagerMock.swift */,
+				BA2B0E0E294FB374000E41FC /* UserViewControllerMock.swift */,
+				BA2B0E10294FB8A9000E41FC /* DispatchQueueMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		BA96592C29279FDA0005CB1C /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +196,6 @@
 				BA9659312927A0080005CB1C /* UserPresenter.swift */,
 				BA38A4CD2938EECB00FED81F /* WeatherData.swift */,
 				BA38A4CF2938F46B00FED81F /* Weather.swift */,
-				BA38A4D12938F89300FED81F /* NetworkService.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -152,8 +203,10 @@
 		BAE516EA28F410A200130628 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				BA38A4D12938F89300FED81F /* WeatherService.swift */,
 				BA0CBD2E28EEF3300003CC71 /* DateService.swift */,
 				BAE516EB28F410B600130628 /* NotesService.swift */,
+				BA76D74C294F909100140C35 /* LocationManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -181,6 +234,24 @@
 			productReference = BA0CBCF228EC55090003CC71 /* todolist.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BA2B0DFF294FA811000E41FC /* todolistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA2B0E08294FA811000E41FC /* Build configuration list for PBXNativeTarget "todolistTests" */;
+			buildPhases = (
+				BA2B0DFC294FA811000E41FC /* Sources */,
+				BA2B0DFD294FA811000E41FC /* Frameworks */,
+				BA2B0DFE294FA811000E41FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA2B0E05294FA811000E41FC /* PBXTargetDependency */,
+			);
+			name = todolistTests;
+			productName = todolistTests;
+			productReference = BA2B0E00294FA811000E41FC /* todolistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,11 +259,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					BA0CBCF128EC55090003CC71 = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					BA2B0DFF294FA811000E41FC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BA0CBCF128EC55090003CC71;
 					};
 				};
 			};
@@ -213,6 +288,7 @@
 			projectRoot = "";
 			targets = (
 				BA0CBCF128EC55090003CC71 /* todolist */,
+				BA2B0DFF294FA811000E41FC /* todolistTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB7B87C28F5A8DB00A1FD2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2B0DFE294FA811000E41FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,8 +320,9 @@
 				BA38A4D02938F46B00FED81F /* Weather.swift in Sources */,
 				BA96592E29279FEB0005CB1C /* UserViewController.swift in Sources */,
 				BA0CBD2D28EEB9DA0003CC71 /* EditScreenAssembly.swift in Sources */,
-				BA38A4D22938F89300FED81F /* NetworkService.swift in Sources */,
+				BA38A4D22938F89300FED81F /* WeatherService.swift in Sources */,
 				BA0CBD0F28EC55500003CC71 /* MainScreenViewController.swift in Sources */,
+				BA76D74D294F909100140C35 /* LocationManager.swift in Sources */,
 				BA0CBD1D28EC72F50003CC71 /* MainFlowCoordinator.swift in Sources */,
 				BA0CBD2928EEB9C00003CC71 /* EditScreenViewController.swift in Sources */,
 				BA38A4CE2938EECB00FED81F /* WeatherData.swift in Sources */,
@@ -254,7 +338,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA2B0DFC294FA811000E41FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2B0E0D294FB302000E41FC /* LocationManagerMock.swift in Sources */,
+				BA2B0E11294FB8A9000E41FC /* DispatchQueueMock.swift in Sources */,
+				BA2B0E03294FA811000E41FC /* todolistTests.swift in Sources */,
+				BA2B0E0B294FB1EA000E41FC /* WeatherServiceMock.swift in Sources */,
+				BA2B0E0F294FB374000E41FC /* UserViewControllerMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA2B0E05294FA811000E41FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA0CBCF128EC55090003CC71 /* todolist */;
+			targetProxy = BA2B0E04294FA811000E41FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BA0CBD0328EC550B0003CC71 /* LaunchScreen.storyboard */ = {
@@ -436,6 +540,46 @@
 			};
 			name = Release;
 		};
+		BA2B0E06294FA811000E41FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYZTUHFK6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = some.company.todolistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todolist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/todolist";
+			};
+			name = Debug;
+		};
+		BA2B0E07294FA811000E41FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYZTUHFK6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = some.company.todolistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todolist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/todolist";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,6 +597,15 @@
 			buildConfigurations = (
 				BA0CBD0A28EC550B0003CC71 /* Debug */,
 				BA0CBD0B28EC550B0003CC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA2B0E08294FA811000E41FC /* Build configuration list for PBXNativeTarget "todolistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA2B0E06294FA811000E41FC /* Debug */,
+				BA2B0E07294FA811000E41FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

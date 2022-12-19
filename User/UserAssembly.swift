@@ -3,18 +3,21 @@ import UIKit
 
 final class UserAssembly {
     
-    private var networkService: NetworkService
+    private var weatherService: WeatherService
+    private var locationManager: LocationManager
     
-    init(networkService: NetworkService) {
-        self.networkService = networkService
+    init(weatherService: WeatherService, locationManager: LocationManager) {
+        self.weatherService = weatherService
+        self.locationManager = locationManager
     }
     
-    func assemble(output: UserPresenterOutput) -> UIViewController {
+    func assemble() -> UIViewController {
         
-        let presenter = UserPresenter(output: output, networkService: networkService)
+        let presenter = UserPresenter(weatherService: weatherService, locationManager: locationManager, dispatchQueue: DispatchQueue.main)
         let vc = UserViewController(presenter: presenter)
         let navigationVC = UINavigationController(rootViewController: vc)
         navigationVC.navigationBar.prefersLargeTitles = true
+        presenter.view = vc
         return navigationVC
     }
 }
